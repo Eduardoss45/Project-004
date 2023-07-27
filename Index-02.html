@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de login</title>
+    <link rel="stylesheet" href="estilo/style2.0.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="return">
+        <a class="return-btn" href="index-00.html">Voltar</a>
+    </div>
+    <section class="section">
+        <div class="form-box">
+            <div class="form-value">
+                <form action="">
+                    <h2>Conecte-se</h2>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" required>
+                        <label for="">password</label>
+                    </div>
+                    <div class="forget">
+                        <label for=""><input type="checkbox">Remenber Me</label>
+                        <div class="link">
+                            <a href="#">Forget Password</a>                      
+                        </div>
+                    </div>
+                    <button class="button">Log in</button>
+                    <div class="register">
+                        <p>Don't have a account 
+                           <div class="link">
+                               <a href="#">Register</a>
+                           </div> 
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="javascript.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".form-box"), {
+        max: 2.5,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.1,
+    }
+    );
+    </script>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> 
+<script nomodule src="https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
