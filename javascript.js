@@ -1,17 +1,16 @@
 function buscar_cidade() {
-    let input = document.getElementById('Barra-01').value
+  let input = document.getElementById('Barra-01').value
     input=input.toLowerCase();
-    let x = document.getElementsByClassName('locais-00');
-      
+    let x = document.getElementsByClassName('locais-00');  
     for (i = 0; i < x.length; i++) { 
-        if (!x[i].innerHTML.toLowerCase().includes(input)) {
-            x[i].style.display="none";
-        }
-        else {
+      if (!x[i].innerHTML.toLowerCase().includes(input)) {
+        x[i].style.display="none";
+      }
+      else {
             x[i].style.display="list-item";                 
-        }
+          }
     }
-}
+  }
 var VanillaTilt = (function () {
     'use strict';
     
