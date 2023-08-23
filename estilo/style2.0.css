@@ -6,7 +6,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Righteous', cursive;
-    background: url(pexels-asad-photo-maldives-1450360.jpg) no-repeat;
+    background: url(fundo.jpg) no-repeat;
     background-position: initial;
     background-size: cover;
     overflow-x: hidden;
@@ -101,10 +101,11 @@ li {
 }
 #lista li a {
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     padding: 5px;
     margin: 5px;
     font-size: 15px;
+    font-size: 20px;
 }
 .box-search-01 {
     display: list-item;
@@ -128,12 +129,13 @@ h1 {
     background: #00000088;
     backdrop-filter: blur(2px);
     text-align: center;
+    color: #ffffff;
 }
 ul {
     background-color: #3c3c3c81;
 }
 #lista li a:hover {
-    color: #ffffff;
+    color: #000000;
     transition: 800ms;
     
 }
@@ -279,7 +281,8 @@ footer {
 }
 .footer-01 {
     margin: 0;
-    color: #000000;
+    font-size: 15px;
+    color: #ffffff;
 }
 .img-size-1{
     width: 100%;
