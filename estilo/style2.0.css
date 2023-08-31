@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 body {
@@ -12,22 +11,26 @@ body {
     overflow-x: hidden;
     box-shadow: inset 20px 50px 150px 75px #000000;
 }
+
 .LineHr {
     width: 3%;
     float: left;
     margin: 1%;
 }
+
 .SubTitle {
     padding: 20px;
     text-align: start;
     font-weight: 700;
-    font-size: clamp(3.6rem,calc(3.6rem + 3.6 * ((100vw - 48rem) / 80)),7.2rem);
+    font-size: clamp(3.6rem, calc(3.6rem + 3.6 * ((100vw - 48rem) / 80)), 7.2rem);
     line-height: 1;
     letter-spacing: -.0138888889em;
 }
+
 .flex-01 {
-    max-width: 100%;  
+    max-width: 100%;
 }
+
 .bloco-01 {
     padding: 5px;
     margin: 5px;
@@ -38,9 +41,11 @@ body {
     justify-content: space-between;
     padding-bottom: 50px;
 }
+
 .bloco-01 nav a {
     padding: 10px;
 }
+
 .bloco-01 nav input {
     padding: 10px;
     margin: 40px;
@@ -48,57 +53,63 @@ body {
     backdrop-filter: blur(300px);
     color: #000000;
 }
+
 .texto {
     color: #000000;
 }
+
 .img-logo-01 {
     width: 150px;
 }
+
 input::placeholder {
     color: #000000
 }
+
 .active {
     margin: 0px;
     padding: 20px;
 }
-#Barra-01{
+
+#Barra-01 {
     margin: 10%;
     padding: 15px;
     border-radius: 10px;
-  }
-
-  input[type=text] {
-     width: 35%;
-     -webkit-transition: width 0.15s ease-in-out;
-     transition: width 0.15s ease-in-out;
-  }
-  
-  input[type=text]:focus {
-      width: 70%;
-  }
-  
-  #lista{
-   font-size:  1.5em;
-   padding: 10px;
-   font-weight: bold;
-   margin: 5% 10%;
-   font-size: 25px;
-   box-shadow: 20px 20px 50px #000000;
-   border-radius: 10px;
-   background: #ffffff1a;
-   border-top: 1px solid #ffffff80;
-   border-left: 1px solid #ffffff80;
-   backdrop-filter: blur(2px);
 }
 
-.itens-00{
+input[type=text] {
+    width: 35%;
+    -webkit-transition: width 0.15s ease-in-out;
+    transition: width 0.15s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 70%;
+}
+
+#lista {
+    font-size: 1.5em;
+    padding: 10px;
+    font-weight: bold;
+    margin: 5% 10%;
+    font-size: 25px;
+    box-shadow: 20px 20px 50px #000000;
+    border-radius: 10px;
+    background: #ffffff1a;
+    border-top: 1px solid #ffffff80;
+    border-left: 1px solid #ffffff80;
+    backdrop-filter: blur(2px);
+}
+
+.itens-00 {
     display: list-item;
-} 
+}
 
 li {
     list-style: none;
     position: relative;
 }
+
 #lista li a {
     text-decoration: none;
     color: #ffffff;
@@ -107,19 +118,23 @@ li {
     font-size: 15px;
     font-size: 20px;
 }
+
 .box-search-01 {
     display: list-item;
     position: relative;
 }
+
 .des {
     font-size: 10px;
 }
+
 h1 {
     font-weight: bold;
     color: #ffffff;
     padding: 40px;
     font-size: 12px;
 }
+
 .texto-01 {
     padding: 10px;
     margin: 2%;
@@ -131,13 +146,15 @@ h1 {
     text-align: center;
     color: #ffffff;
 }
+
 ul {
     background-color: #3c3c3c81;
 }
+
 #lista li a:hover {
     color: #000000;
     transition: 800ms;
-    
+
 }
 
 
@@ -150,6 +167,7 @@ ul {
     background-position: center;
     background-size: cover;
 }
+
 .form-box {
     position: relative;
     width: 400px;
@@ -162,18 +180,21 @@ ul {
     backdrop-filter: blur(15px);
     background-color: #3c3c3c81;
 }
+
 h2 {
     font-size: 2em;
     color: #ffffff;
     text-align: center;
 }
+
 .inputbox {
     position: relative;
     margin: 30px 0;
     width: 310px;
     border-bottom: 2px solid #ffffff;
 }
-.inputbox label{
+
+.inputbox label {
     position: absolute;
     top: 50%;
     left: 5px;
@@ -181,13 +202,15 @@ h2 {
     color: #ffffff;
     font-size: 1em;
     pointer-events: none;
-    transition: .5s;   
+    transition: .5s;
 }
-input:invalid ~ label,
-input:valid ~ label{
-top: -1px;
+
+input:invalid~label,
+input:valid~label {
+    top: -1px;
 }
-.inputbox input{
+
+.inputbox input {
     width: 100%;
     height: 50px;
     background: transparent;
@@ -197,6 +220,7 @@ top: -1px;
     padding: 0 35px 0 35px;
     color: #ffffff;
 }
+
 .inputbox ion-icon {
     position: absolute;
     right: 0;
@@ -204,28 +228,33 @@ top: -1px;
     font-size: 1.5em;
     top: 25px;
 }
+
 .forget {
     margin: -0px;
-    font-size:  1em;
+    font-size: 1em;
     display: flex;
     color: #ffffff;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.forget label input{
+
+.forget label input {
     margin-right: 10px;
 }
-.forget label a{
+
+.forget label a {
     color: #000fff;
     text-decoration: none;
 
 }
+
 .forget label a:hover {
     text-decoration: underline;
 }
+
 .button {
-    background: linear-gradient(45deg, #ffffff,#00ff00,#ffffff);
+    background: linear-gradient(45deg, #ffffff, #00ff00, #ffffff);
     width: 100%;
     height: 40px;
     border: #000000 solid 2px;
@@ -237,6 +266,7 @@ top: -1px;
     margin-top: 25px;
     border-radius: 10px 0px 10px 0px;
 }
+
 .button:hover {
     transition-delay: 2s;
     background: #00000080 url(pixel-1.png);
@@ -249,74 +279,95 @@ top: -1px;
     background-size: cover;
     transition-duration: 1.5s;
 }
+
 .return {
     display: inline;
 }
+
 .link {
     padding-left: 10px;
 }
+
 .link a {
     text-decoration: none;
     cursor: pointer;
 }
+
 .forget a {
     color: #000000;
     transition: 800ms;
 }
+
 .forget a:hover {
     color: #ffffff;
 }
+
 footer {
     position: absolute;
 }
+
 .img {
     border-radius: 10px;
     margin: auto;
 }
+
 .aling {
     display: flow-root;
 }
+
 .rodape-01 {
     text-align: center;
 }
+
 .footer-01 {
     margin: 0;
     font-size: 15px;
     color: #ffffff;
 }
-.img-size-1{
+
+.img-size-1 {
     width: 100%;
 }
-.img-size-2{
+
+.img-size-2 {
     width: auto;
 }
-.img-size-3{
+
+.img-size-3 {
     width: auto;
 }
-.img-size-4{
+
+.img-size-4 {
     width: auto;
 }
-.img-size-5{
+
+.img-size-5 {
     height: 400px;
     width: 50%;
 }
-.img-size-6{
+
+.img-size-6 {
     width: auto;
 }
-.img-size-7{
+
+.img-size-7 {
     width: 100%;
 }
-.img-size-8{
+
+.img-size-8 {
     width: auto;
 }
-.img-size-9{
+
+.img-size-9 {
     width: auto;
 }
+
 .btn-16 {
     border: none;
     color: #000;
-  }
-  .btn-16:after {
+}
+
+.btn-16:after {
     position: absolute;
     content: "";
     width: 0;
@@ -326,26 +377,31 @@ footer {
     direction: rtl;
     z-index: -1;
     box-shadow:
-     -7px -7px 20px 0px #fff9,
-     -4px -4px 5px 0px #fff9,
-     7px 7px 20px 0px #0002,
-     4px 4px 5px 0px #0001;
+        -7px -7px 20px 0px #fff9,
+        -4px -4px 5px 0px #fff9,
+        7px 7px 20px 0px #0002,
+        4px 4px 5px 0px #0001;
     transition: all 0.3s ease;
-  }
-  .btn-16:hover {
+}
+
+.btn-16:hover {
     color: #000;
-  }
-  .btn-16:hover:after {
+}
+
+.btn-16:hover:after {
     left: auto;
     right: 0;
     width: 100%;
-  }
-  .btn-16:active {
+}
+
+.btn-16:active {
     top: 2px;
-  }
-  button {
+}
+
+button {
     margin: 20px;
 }
+
 .custom-btn {
     width: 130px;
     height: 40px;
@@ -359,39 +415,48 @@ footer {
     transition: all 0.3s ease;
     position: relative;
     display: inline-block;
-     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-     7px 7px 20px 0px rgba(0,0,0,.1),
-     4px 4px 5px 0px rgba(0,0,0,.1);
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
     outline: none;
-  }
+}
+
 .margin-btn {
     margin: 5px;
 }
-.enable, .activ {
+
+.enable,
+.activ {
     margin: 0px;
     padding: 0px;
 }
+
 h2 {
     margin-right: 50%;
 }
-    .btn-size {
-        width: 80%;
-    }
-    .TextLink {
-        display: flex;
-        padding-left: 7%;
-        padding-right: 7%;
-    }
-    h3 {
-        text-align: center;
-        font-weight: bold;
-        color: #ffffff;
-        font-size: 40px;
-    }
-    .PaddingB {
-        position: static;
-        margin-top: 25%;
-    }
-    .window {
-        background: #00d9ff;
-    }
+
+.btn-size {
+    width: 80%;
+}
+
+.TextLink {
+    display: flex;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+h3 {
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.PaddingB {
+    position: static;
+    margin-top: 25%;
+}
+
+.window {
+    background: #00d9ff;
+}
