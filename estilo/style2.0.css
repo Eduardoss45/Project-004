@@ -19,7 +19,7 @@ body {
 }
 
 .SubTitle {
-    padding: 20px;
+    padding: 5px;
     text-align: start;
     font-weight: 700;
     font-size: clamp(3.6rem, calc(3.6rem + 3.6 * ((100vw - 48rem) / 80)), 7.2rem);
@@ -66,6 +66,10 @@ input::placeholder {
     color: #000000
 }
 
+.FontMod {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .active {
     margin: 0px;
     padding: 20px;
@@ -88,14 +92,13 @@ input[type=text]:focus {
 }
 
 #lista {
-    font-size: 1.5em;
     padding: 10px;
     font-weight: bold;
     margin: 5% 10%;
     font-size: 25px;
     box-shadow: 20px 20px 50px #000000;
     border-radius: 10px;
-    background: #ffffff1a;
+    background: linear-gradient(45deg, #00aaf3,#00ff29 );
     border-top: 1px solid #ffffff80;
     border-left: 1px solid #ffffff80;
     backdrop-filter: blur(2px);
@@ -115,7 +118,7 @@ li {
     color: #ffffff;
     padding: 5px;
     margin: 5px;
-    font-size: 15px;
+    font-size: 10px;
     font-size: 20px;
 }
 
@@ -131,20 +134,25 @@ li {
 h1 {
     font-weight: bold;
     color: #ffffff;
-    padding: 40px;
+    padding-top: 5%;
     font-size: 12px;
 }
 
 .texto-01 {
+    font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
     margin: 2%;
     font-size: 25px;
     box-shadow: 20px 20px 50px #000000;
     border-radius: 10px;
-    background: #00000088;
+    background: linear-gradient(45deg, #00aaf3,#00ff29 );
     backdrop-filter: blur(2px);
     text-align: center;
     color: #ffffff;
+    font-style: inherit;
+    font-weight: inherit;
+    font-size: 100%;
+
 }
 
 ul {
@@ -152,7 +160,7 @@ ul {
 }
 
 #lista li a:hover {
-    color: #000000;
+    color: #888888;
     transition: 800ms;
 
 }
@@ -253,33 +261,6 @@ input:valid~label {
     text-decoration: underline;
 }
 
-.button {
-    background: linear-gradient(45deg, #ffffff, #00ff00, #ffffff);
-    width: 100%;
-    height: 40px;
-    border: #000000 solid 2px;
-    outline: none;
-    cursor: pointer;
-    font-size: 17px;
-    font-weight: 600;
-    transition: background 1.5s;
-    margin-top: 25px;
-    border-radius: 10px 0px 10px 0px;
-}
-
-.button:hover {
-    transition-delay: 2s;
-    background: #00000080 url(pixel-1.png);
-    background-size: 100%;
-    transition-delay: 1s;
-    animation: animate2 1.2s steps(60) forwards;
-    transition: 1.3s linear;
-    color: #ffffff;
-    background-position: center;
-    background-size: cover;
-    transition-duration: 1.5s;
-}
-
 .return {
     display: inline;
 }
@@ -291,6 +272,16 @@ input:valid~label {
 .link a {
     text-decoration: none;
     cursor: pointer;
+    color: #000000;
+}
+
+.link a:hover {
+    color: #ffffff;
+    transition: 500ms;
+}
+
+.TextRegister {
+    color: #ffffff
 }
 
 .forget a {
@@ -321,8 +312,10 @@ footer {
 
 .footer-01 {
     margin: 0;
-    font-size: 15px;
+    font-size: 16px;
     color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1.7rem;
 }
 
 .img-size-1 {
@@ -368,6 +361,7 @@ footer {
 }
 
 .btn-16:after {
+    border-radius: 5px;
     position: absolute;
     content: "";
     width: 0;
@@ -377,15 +371,32 @@ footer {
     direction: rtl;
     z-index: -1;
     box-shadow:
-        -7px -7px 20px 0px #fff9,
-        -4px -4px 5px 0px #fff9,
-        7px 7px 20px 0px #0002,
-        4px 4px 5px 0px #0001;
-    transition: all 0.3s ease;
+        -7px -7px 20px 0px #ffffff,
+        -4px -4px 5px 0px #ffffff,
+        7px 7px 20px 0px rgba(255, 255, 255, 0.133),
+        4px 4px 5px 0px rgba(255, 255, 255, 0.067);
+    transition: all 0.6s ease;
+}
+.custom-btn:after {
+    border-radius: 5px;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    box-shadow:
+        -7px -7px 20px 0px #ffffff,
+        -4px -4px 5px 0px #ffffff,
+        7px 7px 20px 0px rgba(255, 255, 255, 0.133),
+        4px 4px 5px 0px rgba(255, 255, 255, 0.067);
+    transition: all 0.6s ease;
 }
 
 .btn-16:hover {
-    color: #000;
+    color: #888888;
 }
 
 .btn-16:hover:after {
@@ -415,9 +426,9 @@ button {
     transition: all 0.3s ease;
     position: relative;
     display: inline-block;
-    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
-        7px 7px 20px 0px rgba(0, 0, 0, .1),
-        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    box-shadow: inset 2px 2px 2px 0px rgb(255, 255, 255),
+        7px 7px 20px 0px rgba(255, 255, 255, 0),
+        4px 4px 5px 0px rgba(255, 255, 255, 0);
     outline: none;
 }
 
@@ -455,8 +466,4 @@ h3 {
 .PaddingB {
     position: static;
     margin-top: 25%;
-}
-
-.window {
-    background: #00d9ff;
 }
