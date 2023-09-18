@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Rubik:wght@300 & display=swap');
 
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Righteous', cursive;
-    background: url(fundo.jpg) no-repeat;
-    background-position: initial;
+    background: url(../src/img/pexels-dilara-albamya-13002461.jpg) no-repeat;
+    background-position: center;
     background-size: cover;
     overflow-x: hidden;
     box-shadow: inset 20px 50px 150px 75px #000000;
+    background-attachment: fixed;
 }
 
 .LineHr {
@@ -72,7 +74,7 @@ input::placeholder {
 
 .active {
     margin: 0px;
-    padding: 20px;
+    padding: 0px;
 }
 
 #Barra-01 {
@@ -98,11 +100,18 @@ input[type=text]:focus {
     font-size: 25px;
     box-shadow: 20px 20px 50px #000000;
     border-radius: 10px;
-    background: linear-gradient(45deg, #00aaf3,#00ff29 );
+    /*background: linear-gradient(45deg, #05AFF2,#05F215,#79F281 );*/
+    background-color: #ffffffda;
     border-top: 1px solid #ffffff80;
     border-left: 1px solid #ffffff80;
     backdrop-filter: blur(2px);
+    transition: 1s;
 }
+
+/*#lista:hover {
+    background: #ffffff;
+    transition: 1s;
+}*/
 
 .itens-00 {
     display: list-item;
@@ -115,20 +124,17 @@ li {
 
 #lista li a {
     text-decoration: none;
-    color: #ffffff;
+    color: #000000;
     padding: 5px;
     margin: 5px;
     font-size: 10px;
     font-size: 20px;
+    transition: 1s;
 }
 
 .box-search-01 {
     display: list-item;
     position: relative;
-}
-
-.des {
-    font-size: 10px;
 }
 
 h1 {
@@ -145,23 +151,33 @@ h1 {
     font-size: 25px;
     box-shadow: 20px 20px 50px #000000;
     border-radius: 10px;
-    background: linear-gradient(45deg, #00aaf3,#00ff29 );
+    /*background: linear-gradient(45deg,#05AFF2,#05F215,#79F281);
+    color: #ffffff;*/
+    background-color: #ffffffda;
     backdrop-filter: blur(2px);
-    text-align: center;
-    color: #ffffff;
+    text-align: justify;
+    color: #000000;
     font-style: inherit;
     font-weight: inherit;
     font-size: 100%;
-
+    display: inline-block;
+    transition: 1s;
+    text-indent: 20px;
 }
+
+/*.texto-01:hover {
+    background: #ffffff;
+    color: #000000;
+    transition: 500ms;
+}*/
 
 ul {
     background-color: #3c3c3c81;
 }
 
 #lista li a:hover {
-    color: #888888;
-    transition: 800ms;
+    color: #000000;
+    transition: 1s;
 
 }
 
@@ -186,7 +202,15 @@ ul {
     align-items: center;
     border-radius: 20px;
     backdrop-filter: blur(15px);
-    background-color: #3c3c3c81;
+    /*background: linear-gradient(45deg,#05AFF2,#05F215,#79F281);*/
+}
+
+.BreakParag {
+    margin-right: 50%;
+}
+
+.ParagNorm {
+    margin: 0;
 }
 
 h2 {
@@ -308,13 +332,15 @@ footer {
 
 .rodape-01 {
     text-align: center;
+    background-image: linear-gradient(to top, #000000, #0000003a);
 }
 
 .footer-01 {
     margin: 0;
     font-size: 16px;
     color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
     padding: 1.7rem;
 }
 
@@ -377,6 +403,7 @@ footer {
         4px 4px 5px 0px rgba(255, 255, 255, 0.067);
     transition: all 0.6s ease;
 }
+
 .custom-btn:after {
     border-radius: 5px;
     position: absolute;
@@ -466,4 +493,31 @@ h3 {
 .PaddingB {
     position: static;
     margin-top: 25%;
+}
+
+.ListStyle {
+    padding: 1%;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 2%;
+    /*background: linear-gradient(45deg,#00aaf3, #00ff29);
+    color: #ffffff;*/
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 1s;
+    background-color: #ffffffda;
+
+}
+
+.ListStyle:hover {
+    background: #ffffffda;
+    color: #000000;
+    transition: 1s;
+}
+
+.enabled {
+    margin: 0;
+}
+
+.TextAjust {
+    margin: 0;
 }
