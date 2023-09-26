@@ -521,3 +521,30 @@ h3 {
 .TextAjust {
     margin: 0;
 }
+@media (min-width: 320px) {
+    button {
+        margin: 2px;
+    }
+    header>div>nav {
+        .custom-btn {
+            width: 100px;
+            height: 35px;
+            color: #fff;
+            border-radius: 5px;
+            padding: 5px 15px;
+            font-family: 'Lato', sans-serif;
+            font-weight: bolder;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            display: inline-block;
+            box-shadow: inset 2px 2px 2px 0px rgb(255, 255, 255), 7px 7px 20px 0px rgba(255, 255, 255, 0), 4px 4px 5px 0px rgba(255, 255, 255, 0);
+            outline: none;
+        }
+        .btn-16 {
+            border: none;
+            color: #000;
+        }
+        }
+}
